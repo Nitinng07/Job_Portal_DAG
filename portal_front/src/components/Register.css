@@ -1,0 +1,309 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00D084;
+    color: white;
+  }
+
+  /* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.navbar-logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+  /* Left Side: Register Info */
+.register-info {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 25px;
+  margin-left: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block; 
+  animation: slideIn 0.8s ease-out;
+  /* white-space: nowrap;  */
+}
+
+/* Slide-in animation for registration form */
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+.register-info-img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.register-info h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.register-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: #444;
+  text-align: start;
+}
+
+.register-info li {
+  margin: 10px 0;
+}
+
+  label{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    text-decoration: solid;
+    padding-left: 1px;
+    display: block;
+    font-weight: bold;
+    text-align: left; /* Align labels to the left */
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .register-container {
+    width: 45%;
+    margin-right: 40px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .register-container input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+  }
+  
+  .register-container input:focus {
+    border-color: #00d084;
+    outline: none;
+  }
+
+  /* Hover Effects */
+.register-container input:hover,
+.register-container button:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+  
+  /* Work Status Section */
+  .work-status-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  .work-status-option {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: #fff;
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  
+  .work-status-option:hover {
+    border-color: #00d084;
+    transform: scale(1.05);
+  }
+  
+  .work-status-option.selected {
+    border: 2px solid #00d084;
+    background-color: #e8f1ff;
+    background-color: #f0f0f0;
+    border-color: #00d084;
+  }
+  
+  .work-status-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .work-status-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .work-status-option h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .work-status-option p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Button */
+  .register-container button,
+  .github-signin-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00d084;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+  }
+  
+  .register-container button:hover,
+  .github-signin-button:hover {
+    background-color: #00d084;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .work-status-option:last-child {
+    margin-right: 0;
+  }
+
+  .work-status-content h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .work-status-content p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .google-button,
+  .github-signin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #00d084;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .google-button:hover,
+   .github-signin-button:hover{
+    background-color: #00d084;
+    transform: scale(1.05);
+  }
+  
+  .google-icon,
+  .github-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+.register-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.role-container {
+  display: flex;
+  flex-direction: column;
+  align-items: anchor-center; /* Aligns label and select box to the left */
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.role-container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+
+.role-container select:hover {
+  border-color: #00d084;
+  transform: scale(1.02);
+}
+
+.github-signin-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+

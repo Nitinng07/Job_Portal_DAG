@@ -1,0 +1,98 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a859;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ffd700;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+  margin-right: 15px;
+}
+
+.search-input {
+  padding: 8px 30px 8px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-actions {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-actions li {
+  margin-left: 15px;
+}
+
+.navbar-actions a, .register-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.register-button {
+  background-color: white;
+  color: #00a859;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-button:hover {
+  background-color: #ffd700;
+  color: black;
+}

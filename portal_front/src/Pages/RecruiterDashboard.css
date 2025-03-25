@@ -1,0 +1,185 @@
+/* Profile Picture Button */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd;
+  }
+  
+  /* Dropdown Menu */
+  .profile-menu {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: white;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .profile-dropdown.open .profile-menu {
+    display: flex;
+  }
+  
+  /* Menu Items */
+  .profile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .profile-menu a:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Dropdown Inside Settings */
+  .settings-dropdown {
+    display: none;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .settings-dropdown.open {
+    display: flex;
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .profile-menu {
+      width: 180px;
+    }
+  }
+
+  .banner-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(48, 224, 115);
+    background: rgba(210, 197, 197, 0.0);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.banner-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #e1da4f;
+}
+
+.banner-buttons .btn {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.banner-buttons .btn-success {
+    background-color: #008C5A;
+    border: none;
+}
+
+.banner-buttons .btn-success:hover {
+    background-color: #007e33;
+}
+
+.banner-buttons .btn-outline-light {
+  background-color: #7b6928;
+}
+
+.banner-buttons .btn-outline-light:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+.banner-img {
+  width: 100%;
+  height: 20px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.banner-section {
+  position: relative;
+  margin-top: 0px; /* Adjust based on navbar height */
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent; /* Initially transparent */
+  transition: background 0.3s ease-in-out;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Dark background on scroll */
+}
+
+.navbar-left .portal-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-right .logout-button {
+  background: red;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.navbar-right .logout-button:hover {
+  background: darkred;
+}

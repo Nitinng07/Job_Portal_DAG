@@ -1,0 +1,279 @@
+/* Full Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008c5a;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo & Title */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.portal-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Search Bar Centered */
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  width: 250px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+}
+
+.search-button {
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/* Right Section (Login & Signup) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-login {
+  margin-right: 20px;
+}
+
+.login-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.signup-button {
+  background-color: white;
+  color: #00D084;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-button:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Combined Container */
+.login-combined-container {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center;
+  height: 85vh; */
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Register Info Section */
+.new-to-naukri {
+  width: 30%;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: fit-content;
+  animation: slideIn 0.8s ease-out;
+}
+
+.new-to-naukri h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+}
+
+.new-to-naukri ul {
+  list-style: none;
+  padding: 0;
+}
+
+.new-to-naukri li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.register-free-button {
+  background-color: #00D084;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.register-free-button:hover {
+  background-color: #008c5a;
+}
+
+/* Slide-in Animation for Login Form */
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Login Container */
+.login-container {
+  width: 35%;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 0.8s ease-out;
+}
+
+/* Login Form */
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-container label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.login-container input:focus {
+  border-color: #00D084;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 208, 132, 0.5);
+}
+
+/* Forgot Password */
+.forgot-password {
+  font-size: 12px;
+  color: #00D084;
+  text-decoration: none;
+  float: right;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00D084;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background-color: #008c5a;
+}
+
+/* Divider */
+.or-divider {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Social Login Buttons */
+.google-signin-button,
+.linkedin-signin-button,
+.github-signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.google-signin-button img,
+.linkedin-signin-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.google-signin-button:hover,
+.linkedin-signin-button:hover,
+.github-signin-button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* OTP Login */
+.otp {
+  font-size: 14px;
+  color: #00D084;
+  text-decoration: none;
+}
+
+.otp:hover {
+  text-decoration: underline;
+}
